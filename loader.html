@@ -1,13 +1,39 @@
 <!-- ═══════════════════════════════════════════════════════════════
-     ECL SITE LOADER  —  THIS IS THE ONLY THING YOU PASTE INTO WORDPRESS.
-     Paste it once into a Custom HTML block (or a Code Snippet) on a
-     single WordPress page. After that, never touch WordPress again —
-     all changes happen by editing files and running `git push`.
+     ECL SITE LOADERS  —  what you paste into WordPress, once per page.
+     York's theme menu does the navigating; each menu page below gets
+     its OWN snippet (they differ only by data-page="...").
 
-     It pulls everything from your GitHub repo (henryk42/ecl-site) via
-     the free jsDelivr CDN.
+     Paste each snippet into a Custom HTML block on the matching York
+     page. After that, never touch WordPress again — all content
+     changes happen by editing content.js and running `git push`.
      ═══════════════════════════════════════════════════════════════ -->
 
-<div id="ecl-app"></div>
+
+<!-- ── HOME ───────────────────────────────────────────────────── -->
+<div id="ecl-app" data-page="home"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/henryk42/ecl-site@main/styles.css">
+<script type="module" src="https://cdn.jsdelivr.net/gh/henryk42/ecl-site@main/app.js"></script>
+
+
+<!-- ── SCIENTIFIC ACTIVITIES ──────────────────────────────────── -->
+<div id="ecl-app" data-page="scientific-activities"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/henryk42/ecl-site@main/styles.css">
+<script type="module" src="https://cdn.jsdelivr.net/gh/henryk42/ecl-site@main/app.js"></script>
+
+
+<!-- ── PEOPLE ─────────────────────────────────────────────────── -->
+<div id="ecl-app" data-page="people"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/henryk42/ecl-site@main/styles.css">
+<script type="module" src="https://cdn.jsdelivr.net/gh/henryk42/ecl-site@main/app.js"></script>
+
+
+<!-- ── NEWS ───────────────────────────────────────────────────── -->
+<div id="ecl-app" data-page="news"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/henryk42/ecl-site@main/styles.css">
+<script type="module" src="https://cdn.jsdelivr.net/gh/henryk42/ecl-site@main/app.js"></script>
+
+
+<!-- ── CONTACT US ─────────────────────────────────────────────── -->
+<div id="ecl-app" data-page="contact"></div>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/henryk42/ecl-site@main/styles.css">
 <script type="module" src="https://cdn.jsdelivr.net/gh/henryk42/ecl-site@main/app.js"></script>

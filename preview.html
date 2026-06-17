@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<!-- LOCAL PREVIEW ONLY. This file is NOT used by WordPress.
-     It loads the LOCAL styles.css / app.js so you can see the site
-     before pushing to GitHub. The real site uses loader.html (CDN). -->
+<!-- LOCAL PREVIEW ONLY. Not used by WordPress.
+     Loads the LOCAL styles.css / app.js so you can see content before
+     pushing. Switch pages with ?ecl-page=people  (home is the default).
+     A faint frame below stands in for York's theme chrome. -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ECL — local preview</title>
   <link rel="stylesheet" href="./styles.css">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; background:#fff; color:#1a1a1a; }
+    .frame { max-width: 1080px; margin: 0 auto; padding: 24px; }
+    .chrome { border-bottom:1px solid #e3e3e3; padding:14px 0; color:#888; font-size:13px; }
+  </style>
 </head>
 <body>
-  <div id="ecl-app"></div>
+  <div class="frame">
+    <div class="chrome">↑ York theme menu sits here (Home · Scientific Activities · People · News · Contact Us)</div>
+    <div id="ecl-app"></div>
+  </div>
   <script type="module" src="./app.js"></script>
 </body>
 </html>
